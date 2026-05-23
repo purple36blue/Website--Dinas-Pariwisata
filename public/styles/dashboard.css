@@ -1,0 +1,167 @@
+/* Card */
+.card {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Stats */
+.stat-card h3 {
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 1.5s ease;
+}
+
+.stat-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    background: linear-gradient(125deg,#57bbf4, #40ffc6);
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon i {
+    color: white;
+    font-size: 20px;
+}
+
+/* Warna */
+.icon.green {
+    background: linear-gradient(135deg, #4bfbc6, #28b88c);
+}
+
+.icon.darkblue {
+    background: linear-gradient(135deg, #81a4fb, #3847eb);
+}
+
+.icon.purple {
+    background: linear-gradient(135deg, #e17cfa, rgb(181, 14, 159));
+}
+
+.icon.blue {
+    background: linear-gradient(135deg, #6bbafa, #268bde);
+}
+
+.icon.cyan {
+    background: linear-gradient(135deg, #22b8cf, #047483);
+}
+
+/* =========================
+   ACTIVITY WRAPPER
+========================= */
+
+.activity-wrapper {
+    margin-top: 10px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.activity-card {
+
+    background: #f8fafc;
+
+    border-radius: 18px;
+
+    padding: 18px;
+
+    height: 100%;
+
+    transition: 0.3s;
+}
+
+.activity-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,0.08);
+
+    background: white;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.activity-card h6 {
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+    color: #0f172a;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.activity-card h6 i {
+
+    color: #0ea5e9;
+}
+
+/* =========================
+   ITEM
+========================= */
+
+.activity-item {
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-item span {
+
+    display: block;
+
+    font-weight: 500;
+
+    color: #334155;
+}
+
+.activity-item small {
+
+    color: #94a3b8;
+}
+
+/* Summary */
+.summary div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* ukuran chart biar rapi */
+canvas {
+    margin-top: 20px;
+    width: 100% !important;
+    height: 80px !important;
+}
+
+.row.text-center > div {
+    min-width: 120px;
+}
+
+/* biar tidak gepeng di mobile */
+@media (max-width: 800px) {
+    canvas {
+        height: 100px !important;
+    }
+}
+

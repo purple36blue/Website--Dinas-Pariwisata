@@ -1,0 +1,181 @@
+footer {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+/* 🔥 ANIMASI GRADIENT */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.footer-section {
+    width: 100%;
+    padding: 50px 40px;
+    color: white;
+
+    box-shadow: 0 0 40px rgba(0, 184, 148, 0.3);
+    background: linear-gradient(270deg, #00b894, #0984e3, #6c5ce7, #00cec9);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 4fr;
+    gap: 40px;
+
+    padding: 0 40px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer-container > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Tambahan smooth global */
+.footer-section * {
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-logo {
+    margin-right: 20px;
+}
+
+.footer-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.footer-title h5 {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-title span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.footer-text {
+    width: 350px;
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+    text-align: justify;
+}
+
+.footer-link {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 0 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    background: white;
+    color: #0984e3;
+}
+
+.footer-kontak .footer-text{
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.footer-map {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-map iframe {
+    width: 100%;
+    max-width: 100%; /* 🔥 full isi kolom */
+    height: 300px; /* 🔥 sedikit lebih tinggi biar kelihatan luas */
+
+    border: none;
+    border-radius: 10px;
+}
+
+.footer-map iframe:hover {
+    transform: scale(1.03);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer-section {
+        padding: 40px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-map iframe {
+        height: 200px;
+    }
+}
